@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'arcade'; 
+    src: url('../font/Demo_Fonts/Fontspring-DEMO-universo-light.otf') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: aliceblue;
+    background-image: url('../images/setup.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: var(--background-position-x) var(--background-position-y);
+    transition: background-position 0.1s ease-out;
+}
+
+  @keyframes dropIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.toplogo{
+    font-family: 'arcade' ;
+    font-size:25px;
+    font-weight: 100;
+    position: fixed;
+    left: 70px;
+    top: 25px;
+    width: 100px;
+    animation: dropIn 2s ease forwards;
+    opacity: 0;
+    z-index: 1;
+}
+#arcade{
+    font-size: 32px;
+    position: relative;
+    bottom: 30px;
+}
+#abyss{
+    font-size: 19px;
+    position: relative;
+    left: 65.5px;
+    bottom: 76px;
+    color: rgb(197, 197, 197);
+}
+#tn{
+  color: rgb(197, 197, 197);
+  position: relative;
+  left: 140px;
+  font-size: 7px;
+  bottom: 155px;
+}
+.navbar {
+    position: relative;
+    right: 88px;
+    bottom: 210px;
+    width: 1555px;
+    height: 0;
+    background-color: rgb(50, 7, 103);
+    overflow: hidden;
+    transition: height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-family: 'arcade';
+    font-size: 18px;
+}
+.toplogo:hover .navbar {
+    height: 220px;
+}
+.eq{
+
+position: relative;
+right: 300px;
+top: 85px;
+}
+.eq p{
+position: relative;
+bottom: 20px;
+font-size: 13px;
+font-weight:bold;
+}
+.ab{
+position: relative;
+bottom: 130px;
+width: 300px;
+}
+.ab p{
+font-size: 13px;
+position: relative;
+bottom: 20px;
+font-weight: bold;
+}
+.co i{
+position: relative;
+right: 200px;
+bottom: 200px;
+cursor: pointer;
+}
+.co{
+position: relative;
+left: 840px;
+bottom: 50px;
+}
+.co i:hover 
+{
+color: rgb(98, 31, 179);
+transition: 0.3s ease;
+}
+.navbar h5{
+font-size: 17px;
+font-weight: lighter;
+}
+.eq p:hover,
+.ab p:hover {
+
+  font-size: 13px;
+  cursor: pointer;
+  letter-spacing:2px;
+}
+.arrow-icon {
+display: inline-block;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+
+.arrow-icon i {
+font-size: 14px; 
+margin-left: 5px;
+vertical-align: middle;
+}
+
+.eq p:hover .arrow-icon,
+.ab p:hover .arrow-icon {
+opacity: 1;
+}
+.setupArrow {
+  width: 100px;
+  height: 25px;
+  position: relative;
+  border-radius: 360px;
+  left: 80px;
+  top: 300px;
+  background-color: transparent;
+  transition: box-shadow 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.arrowSetup {
+  border-radius: 360px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 38px;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.arrowSetup i {
+  position: relative;
+  left: 5px;
+  top: 4px;
+  font-size: 18px;
+}
+
+@keyframes ShopAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShopDisappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.ShopAppear {
+  animation: ShopAppear 0.5s ease-in-out forwards;
+}
+
+.ShopDisappear {
+  animation: ShopDisappear 0.5s ease-in-out forwards;
+}
+
+.arrowSetup:hover {
+  box-shadow: none;
+}
+
+ @keyframes scalingPoint {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.15);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+.point1 {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  top: 750px; 
+  left: 530px;
+  border-radius: 50%; 
+  box-shadow: 0px 0.5px 0.5px 1px rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes scalingCircle {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(5);
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(5);
+  }
+}
+
+.circle1 {
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  top: 720px; 
+  left: 530px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+}
+
+.point1, .circle1 , .point2, .circle2 , .point3 , .circle3 , .CD , .arrow-container {
+  transition: top 0.1s ease-out;
+}
+.point2 
+{
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  left: 730px;
+  top: 675px;
+  border-radius: 50%; 
+  box-shadow: 0px 0.5px 0.5px 1px rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1;
+}
+.circle2 {
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  top: 645px; 
+  left: 730px;
+  border-radius: 50%;
+  background-color:transparent;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+}
+.point3
+{
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  left: 875px;
+  top: 605px;
+  border-radius: 50%; 
+  box-shadow: 0px 0.5px 0.5px 1px rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1;
+}
+.circle3 {
+  width: 10px;
+  height: 10px;
+  position: relative; 
+  left: 875px;
+  top: 575px;
+  border-radius: 50%;
+  background-color:transparent;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+}
+.CD 
+{ 
+  width: 120px;
+  height: 200px; 
+  position: relative; 
+  left: 1230px;
+  top: 200px;
+  animation: circle 5s  linear infinite;
+  transform: rotateX(45deg) rotateY(0deg);
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+@keyframes circle 
+{
+  to 
+  {
+    transform:rotateX(45deg) rotateY(360deg);
+  }
+}
+.arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: bounce 2s infinite;
+  position: relative;
+  left: 435px;
+  top: 10px;
+}
+
+svg {
+  overflow: visible;
+}
+
+.arrow {
+  transform: rotate(280deg);
+  animation: insideAnim 5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes insideAnim {
+  0% {
+      fill: none;
+  }
+  50% {
+      fill: rgb(98, 31, 179);
+  }
+  100% {
+      fill: none;
+  }
+}

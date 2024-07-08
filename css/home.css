@@ -1,0 +1,854 @@
+@font-face {
+  font-family: 'arcade'; 
+  src: url('../font/Demo_Fonts/Fontspring-DEMO-universo-light.otf') format('woff2'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+*{
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+html{
+    font-size: 22px;
+    scroll-behavior: smooth; 
+
+  }
+  body{
+    background-color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    height: 6000px;
+    color:aliceblue;
+
+  }
+.toplogo{
+    font-family: 'arcade' ;
+    font-size:25px;
+    font-weight: 100;
+    position: fixed;
+    left: 70px;
+    top: 25px;
+    width: 100px;
+    animation: dropIn 2s ease forwards;
+    opacity: 0;
+    z-index: 100;
+
+}
+#arcade{
+    font-size: 32px;
+    position: relative;
+    bottom: 30px;
+}
+#abyss{
+    font-size: 19px;
+    position: relative;
+    left: 65.5px;
+    bottom: 76px;
+    color: rgb(197, 197, 197);
+}
+#tn{
+  color: rgb(197, 197, 197);
+  position: relative;
+  left: 140px;
+  font-size: 7px;
+  bottom: 155px;
+}
+
+#equip{
+  color: rgb(197, 197, 197);
+  font-family: 'arcade' ;
+  font-size:18px;
+  font-weight: 100;
+  position: relative;
+  left: 380px;
+  top: 40px;
+  width: 100px;
+
+}
+.equipments{
+  font-size: small;
+  color: rgb(255, 255, 255);
+  position: relative;
+  left: 350px;
+  top: 40px;
+}
+#about{
+  color: rgb(197, 197, 197);
+  font-family: 'arcade' ;
+  font-size:18px;
+  font-weight: 100;
+  position: relative;
+  left: 700px;
+  bottom: 5px;
+  width: 100px;
+
+}
+.welcomephrase{
+  font-family: 'arcade';
+  position: fixed;
+  top: 200px;
+  left: 70px;
+  width: 500px;
+  animation: dropIn 2s ease forwards;
+  opacity: 0;
+  z-index: -4;
+}
+.wecreate{
+  position: relative;
+  top: 175px;
+}
+#we{
+  color: rgb(197, 197, 197);
+}
+#create{
+  position: relative;
+  left: 80px;
+  bottom: 65.5px;
+  color: rgb(197, 197, 197);
+}
+#unexpected{
+  font-size: 80px;
+}
+#experience{
+  font-size: 80px;
+  position: relative;
+  bottom: 110px;
+}
+#for{
+  color:rgb(197, 197, 197);
+  position: relative;
+  bottom: 270px;
+  width: 250px;
+  left: 575px;
+}
+.container {
+  position: relative;
+  width: 0px;
+  height: 770px;
+  left: 1175px;
+  bottom: 30px;
+  animation: dropIn 2s ease forwards;
+  opacity: 0;
+  z-index: -2;
+
+}
+
+
+.line {
+  position: absolute;
+  bottom: 0;
+  width: 1.5px;
+  height: 160%;
+  background: linear-gradient(to top, rgb(50, 7, 103), transparent);
+  transform-origin: bottom center;
+}
+.line:nth-child(1) { transform: rotate(-20.25); }
+  .line:nth-child(2) { transform: rotate(-18deg); }
+  .line:nth-child(3) { transform: rotate(-15.75deg); }
+  .line:nth-child(4) { transform: rotate(-13.5deg); }
+  .line:nth-child(5) { transform: rotate(-11.25deg); }
+  .line:nth-child(6) { transform: rotate(-9deg); }
+  .line:nth-child(7) { transform: rotate(-6.75deg); }
+  .line:nth-child(8) { transform: rotate(-4.5deg); }
+  .line:nth-child(9) { transform: rotate(-2.25deg); }
+  .line:nth-child(10) { transform: rotate(0deg); }
+  .line:nth-child(11) { transform: rotate(2.25deg); }
+  .line:nth-child(12) { transform: rotate(4.5deg); }
+  .line:nth-child(13) { transform: rotate(6.75deg); }
+  .line:nth-child(14) { transform: rotate(9deg); }
+  .line:nth-child(15) { transform: rotate(11.25deg); }
+  .line:nth-child(16) { transform: rotate(13.5deg); }
+  .line:nth-child(17) { transform: rotate(15.75deg); }
+  .line:nth-child(18) { transform: rotate(18deg); }
+  .line:nth-child(19) { transform: rotate(20.25deg); }
+  .color-change {
+    transition: color 0.1s ease;
+  }
+  .sticky {
+    position: fixed;
+    top: 200px;
+    background-color:black;
+    width: 100%;
+    z-index: 100;
+   
+  }
+  .container2{
+    height:400px;
+    position: relative;
+    right: 1250px;
+    bottom: 200px;
+    transform: rotate(-160deg);
+    z-index: 0;
+   }
+   .line2 {
+     position: absolute;
+     bottom: 0;
+     width: 1.5px;
+     height: 180%;
+     background: linear-gradient(to top, rgb(192, 192, 192), transparent);
+     transform-origin: bottom center;
+     
+   }
+  .line2:nth-child(1):nth-child(1) { transform: rotate(-20.25); }
+    .line2:nth-child(2) { transform: rotate(-18deg); }
+    .line2:nth-child(3) { transform: rotate(-15.75deg); }
+    .line2:nth-child(4) { transform: rotate(-13.5deg); }
+    .line2:nth-child(5) { transform: rotate(-11.25deg); }
+    .line2:nth-child(6) { transform: rotate(-9deg); }
+    .line2:nth-child(7) { transform: rotate(-6.75deg); }
+    .line2:nth-child(8) { transform: rotate(-4.5deg); }
+    .line2:nth-child(9) { transform: rotate(-2.25deg); }
+    .line2:nth-child(10) { transform: rotate(0deg); }
+    .line2:nth-child(11) { transform: rotate(2.25deg); }
+    .line2:nth-child(12) { transform: rotate(4.5deg); }
+    .line2:nth-child(13) { transform: rotate(6.75deg); }
+    .line2:nth-child(14) { transform: rotate(9deg); }
+    .line2:nth-child(15) { transform: rotate(11.25deg); }
+    .line2:nth-child(16) { transform: rotate(13.5deg); }
+    .line2:nth-child(17) { transform: rotate(15.75deg); }
+    .line2:nth-child(18) { transform: rotate(18deg); }
+    .line2:nth-child(19) { transform: rotate(20.25deg); }
+    .color-change {
+      transition: color 0.1s ease;
+    }
+  
+ 
+
+  .scroll_container {
+    height: 400vh;
+  }
+.scroll_content{
+  position: relative;
+  top: 700px;
+  right: 90px;
+}
+  .sticky_wrap {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 2700px;
+    background-color: rgb(0, 0, 0);
+  }
+  .horizontal_scroll {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100vw;
+    will-change: transform;
+    display: flex;
+
+  }
+  .left {
+    margin-top: 5vh;
+    margin-left: 5vw;
+  }
+
+  .right {
+    text-align: right;
+    margin-top: 85vh;
+    margin-right: 5vw;
+  }
+.projects
+{
+    display: flex;
+    font-family: 'arcade';
+    height: 100%;
+    width: 90px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-size: 30px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.welcoming
+{
+    position: relative;
+    width: 360px;
+    text-align: left;
+    bottom: 1000px;
+    left: 1155px;
+    background-color: rgb(0, 0, 0);
+    font-family: "arcade";
+    opacity: 0;
+  }
+@keyframes appear {
+  from {opacity: 0;} 
+  to {opacity: 1;} 
+}
+.appear 
+{
+   animation: 2s appear forwards;
+}
+.welc 
+{
+    font-size: 32px;
+    font-weight: 900;
+}
+.welcDet
+{
+    font-size: 17px;
+    font-weight: 100;
+}
+.welcoming .i 
+{
+    background-color: white;
+}
+.hover-underline-animation {
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 170px;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin:  left;
+  transition:  0.8s ;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.how {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.how:after {
+  content: '';
+  position: absolute;
+  width: 170px;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(7, 41, 103);
+  transform-origin:  left;
+  transition:  0.5s ;
+  letter-spacing: 3px;
+  
+}
+
+.how:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+  
+}
+.future
+    {
+      position: relative;
+      width: 360px;
+      text-align: left;
+      bottom: 1000px;
+      left: 1520px;
+      background-color: rgb(0, 0, 0);
+      font-family: "arcade";
+      opacity: 0;
+    }
+    .welcFut
+    {
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .futDet
+    {
+        font-size: 17px;
+        font-weight: 100;
+    }
+    .xb{
+          position: relative;
+          width: 360px;
+          text-align: left;
+          bottom: 1000px;
+          left: 1890px;
+          background-color: rgb(0, 0, 0);
+          font-family: "arcade";
+          opacity: 0;
+    }
+    .potential
+    {
+        position: relative;
+        width: 360px;
+        text-align: left;
+        bottom: 2834px;
+        left: 4100px;
+        background-color: rgb(0, 0, 0);
+        font-family: "arcade";
+        visibility: hidden;
+        opacity: 0;
+    
+    }
+    .welcPot
+    {
+        font-size: 32px;
+        font-weight: 900;
+    }
+    .potDet 
+    {
+        font-size: 17px;
+        font-weight: 100;
+    }
+    
+    .lc 
+    {
+      position: relative;
+      width: 360px;
+      text-align: left;
+      bottom: 1000px;
+      left: 2350px;
+      background-color: rgb(0, 0, 0);
+      font-family: "arcade";
+      opacity: 0;
+    }
+    .hidden {
+     opacity: 0;
+     visibility: hidden;
+    }
+    
+        .navbar {
+          position: relative;
+          right: 88px;
+          bottom: 210px;
+          width: 1550px;
+          height: 0;
+          background-color: rgb(50, 7, 103);
+          overflow: hidden;
+          transition: height 0.5s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: -1;
+      }
+      .navbar a {
+          color: white;
+          text-decoration: none;
+          margin: 10px 0;
+          font-family: 'arcade';
+          font-size: 18px;
+      }
+      .toplogo:hover .navbar {
+          height: 220px;
+      }
+    .eq{
+    
+      position: relative;
+      right: 300px;
+      top: 85px;
+    }
+    .eq p{
+      position: relative;
+      bottom: 20px;
+      font-size: 13px;
+      font-weight:bold;
+    }
+    .ab{
+      position: relative;
+      bottom: 130px;
+      width: 300px;
+    }
+    .ab p{
+      font-size: 13px;
+      position: relative;
+      bottom: 20px;
+      font-weight: bold;
+    }
+    .co i{
+      position: relative;
+      right: 200px;
+      bottom: 200px;
+      cursor: pointer;
+    }
+    .co{
+      position: relative;
+      left: 840px;
+      bottom: 50px;
+    }
+    .co i:hover 
+    {
+      color: rgb(98, 31, 179);
+      transition: 0.3s ease;
+    }
+    .navbar h5{
+      font-size: 17px;
+      font-weight: lighter;
+    }
+    .eq p:hover,
+    .ab p:hover {
+    
+        font-size: 13px;
+        cursor: pointer;
+        letter-spacing:2px;
+    }
+    .arrow-icon {
+      display: inline-block;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .arrow-icon i {
+      font-size: 14px; 
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+    
+    .eq p:hover .arrow-icon,
+    .ab p:hover .arrow-icon {
+      opacity: 1;
+    }
+    .trustedby {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      top: 35px;
+      letter-spacing: 3px;
+      font-size:large;
+      
+      font-family: 'arcade';
+  }
+  
+  .logocontainer {
+    overflow-x: hidden;
+    position: relative;
+    top: 0px; 
+    width: 150%; 
+    height: 300px;
+    left: 2800px;
+}
+
+
+.logo {
+    display: inline-block;
+}
+  
+  
+  
+  
+  .trustedby::before,
+  .trustedby::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ffffff;
+  }
+  
+  .trustedby::before {
+      margin-right: 70px;
+      
+  }
+  
+  .trustedby::after {
+      margin-left: 70px;
+  }
+  
+    .wrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      bottom: 50px;
+  }
+  
+  .containerr {
+      height: 400px;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: start;
+      background-color: rgb(0, 0, 0);
+  }
+  
+  .card {
+      width: 170px;
+      height: 400px;
+      border-radius: .75rem;
+      background-size: cover;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 2rem;
+      margin: 0 10px;
+      display: flex;
+      align-items: flex-end;
+      transition: .6s cubic-bezier(.28,-0.03,0,.99);
+      box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+  }
+  
+  .card > .row {
+      color: white;
+      display: flex;
+      flex-wrap: nowrap;
+      font-family: 'arcade' ;
+  }
+  
+  .card > .row > .icon {
+      background: rgb(0, 0, 0);
+      color: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      position: relative;
+      top: 420px;
+      left: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px;
+  }
+  
+  .card > .row > .description {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      top: 50px;
+      height: 500px;
+      width: 520px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition-delay: .3s;
+      transition: all .3s ease;
+  }
+  
+  .description p {
+      color: #ffffff;
+      padding-top: 5px;
+      position: relative;
+      top: 70px;
+      left: 21px;
+      width: 400px;
+  }
+  
+  .description h4 {
+      text-transform: uppercase;
+      font-size: 25px;
+      position: relative;
+      bottom: 20px;
+      left: 22px;
+      width: 400px;
+      letter-spacing: 5px;
+  }
+  
+  input {
+      display: none;
+  }
+  
+  input:checked + label {
+      width: 600px;
+  }
+  
+  input:checked + label .description {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+  }
+  input:checked + label .icon {
+    opacity: 0.8 ;
+}
+  
+  .card[for="c1"] {
+      background-image: url('../images/gaming8.jpg');
+  }
+  .card[for="c2"] {
+      background-image: url('../images/gaming9.jpg');
+  }
+  .card[for="c3"] {
+      background-image: url('../images/gaming10.jpeg');
+  }
+  .card[for="c4"] {
+      background-image: url('../images/gaming1.jpeg');
+  }
+  @keyframes PopUp {
+    0%
+    {
+       bottom: 450px;
+    }
+    100%
+    {
+      bottom: 480px;
+      opacity: 1;
+    }
+  }
+ .PopUp
+ {
+  animation:  PopUp 0.5s forwards 0.5s ;
+ }
+ @keyframes scalingPoint {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.15);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+.point1 {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 410px;
+  left: 830px;
+  border-radius: 360px;
+  box-shadow: 0px 0.5px 0.5px 1px rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1;
+}
+
+@keyframes scalingCircle {
+  0%
+  {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50%
+  {
+    transform: scale(5);
+    opacity: 0.4;
+  }
+  100%
+  {
+   opacity: 0;
+   transform: scale(5);
+  }
+  }
+.circle1
+{
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 830px;
+  top: 400px;
+  border-radius: 360px;
+  background-color: transparent;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+}
+.setupArrow {
+  width: 100px;
+  height: 25px;
+  position: relative;
+  border-radius: 360px;
+  left: 920px;
+  top: 250px;
+  background-color: transparent;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.arrowSetup {
+  border-radius: 360px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  left: 75px;
+  bottom: 38px;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.arrowSetup i {
+  position: relative;
+  left: 5px;
+  font-size: 18px;
+}
+.tvArrow {
+  width: 100px;
+  height: 25px;
+  position: relative;
+  border-radius: 360px;
+  left: 610px;
+  top: 330px;
+  background-color: transparent;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.arrowTv {
+  border-radius: 360px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 38px;
+  box-shadow: 0px 0px 0.2px 0.3px rgb(255, 255, 255);
+  background-color: transparent;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.arrowTv i {
+  position: relative;
+  left: 5px;
+  font-size: 18px;
+}
+
+
+@keyframes ShopAppear {
+  
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShopDisappear {
+
+  to {
+    opacity: 0;
+  }
+}
+
+.ShopAppear {
+  animation: ShopAppear 0.5s ease-in-out forwards;
+}
+
+.ShopDisappear {
+  animation: ShopDisappear 1s ease-in-out forwards;
+}
+.arrowSetup:hover {
+  box-shadow: none;
+}
+.arrowTv:hover {
+  box-shadow: none;
+}
+.footer 
+{
+  width: 102%;
+  height: 35vh;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 250px;
+  position: relative;
+  bottom: 183px;
+  right: 8px;
+  font-family: "arcade";
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  bottom: 10px;
+}
